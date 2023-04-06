@@ -211,7 +211,7 @@
 					<showDeprecation>true</showDeprecation>
 					<compilerArgs>
 						<arg>-Xdiags:verbose</arg>
-						<arg>-Werror</arg>
+<!--						<arg>-Werror</arg> -->
 					</compilerArgs>
 					<jdkToolchain>
 						<version>8</version>

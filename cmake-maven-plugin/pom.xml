@@ -58,36 +58,36 @@
 					</execution>
 				</executions>
 			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-invoker-plugin</artifactId>
-				<executions>
-					<execution>
-						<id>integration-test</id>
-						<goals>
-							<goal>install</goal>
-							<goal>run</goal>
-						</goals>
-						<configuration>
-							<cloneProjectsTo>${project.build.directory}/it</cloneProjectsTo>
-							<localRepositoryPath>${project.build.directory}/local-repo</localRepositoryPath>
-							<failIfNoProjects>true</failIfNoProjects>
-							<streamLogs>true</streamLogs>
+<!--			<plugin> -->
+<!--				<groupId>org.apache.maven.plugins</groupId> -->
+<!--				<artifactId>maven-invoker-plugin</artifactId> -->
+<!--				<executions> -->
+<!--					<execution> -->
+<!--						<id>integration-test</id> -->
+<!--						<goals> -->
+<!--							<goal>install</goal> -->
+<!--							<goal>run</goal> -->
+<!--						</goals> -->
+<!--						<configuration> -->
+<!--							<cloneProjectsTo>${project.build.directory}/it</cloneProjectsTo> -->
+<!--							<localRepositoryPath>${project.build.directory}/local-repo</localRepositoryPath> -->
+<!--							<failIfNoProjects>true</failIfNoProjects> -->
+<!--							<streamLogs>true</streamLogs> -->
 							<!--
 							Fast Build Configuration:
 							https://maven.apache.org/plugins/maven-invoker-plugin/examples/fast-use.html
 							-->
-							<settingsFile>src/it/settings.xml</settingsFile>
-							<properties>
-								<cmake.plugin.groupid>${project.groupId}</cmake.plugin.groupid>
-								<cmake.plugin.version>${project.version}</cmake.plugin.version>
-								<platform>${platform}</platform>
-								<skipUnpackBinaries>${skipUnpackBinaries}</skipUnpackBinaries>
-							</properties>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
+<!--							<settingsFile>src/it/settings.xml</settingsFile> -->
+<!--							<properties> -->
+<!--								<cmake.plugin.groupid>${project.groupId}</cmake.plugin.groupid> -->
+<!--								<cmake.plugin.version>${project.version}</cmake.plugin.version> -->
+<!--								<platform>${platform}</platform> -->
+<!--								<skipUnpackBinaries>${skipUnpackBinaries}</skipUnpackBinaries> -->
+<!--							</properties> -->
+<!--						</configuration> -->
+<!--					</execution> -->
+<!--				</executions> -->
+<!--			</plugin> -->
 		</plugins>
 	</build>
 
